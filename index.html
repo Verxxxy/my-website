@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Handphone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <h1>Rental Handphone</h1>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#devices">Jenis Handphone</a></li>
+            <li><a href="#testimonials">Testimoni</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="container">
+        <div class="home-content">
+          <h2>Penyewaan Handphone</h2>
+          <p>
+            Segera sewa handphone dari kami untuk kebutuhan konser Anda, dan
+            pastikan momen penting tersebut terekam dengan sempurna!
+          </p>
+          <a href="#services" class="cta-button">Lihat Layanan Kami</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Layanan Kami</h2>
+        <div class="services-list">
+          <div class="service-item">
+            <h3>Penyewaan Harian</h3>
+            <p>
+              Sewa handphone harian dengan pilihan handphone terbaru dan
+              kualitas terjamin.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Penyewaan Mingguan</h3>
+            <p>
+              Solusi penyewaan jangka menengah untuk kebutuhan kerja, event,
+              atau pribadi.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Penyewaan Bulanan</h3>
+            <p>
+              Penyewaan jangka panjang dengan paket harga khusus untuk kebutuhan
+              bisnis atau proyek besar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="devices">
+      <div class="container">
+        <h2>Jenis Handphone</h2>
+        <div class="device-item">
+          <img src="img/Galaxy s23ultra.jpg" alt="Samsung S23 Ultra" />
+          <h3>Samsung S23 Ultra</h3>
+          <p>Harga Sewa: Rp. 500.000 / hari</p>
+          <a href="#" class="spec-button" onclick="openSpecPopup()"
+            >Lihat Spesifikasi</a
+          >
+        </div>
+      </div>
+
+      <!-- Popup Spesifikasi -->
+      <div id="spec-popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closeSpecPopup()">&times;</span>
+          <h3>Spesifikasi Samsung S23 Ultra</h3>
+          <ul>
+            <li><strong>RAM:</strong> 12 GB</li>
+            <li><strong>Penyimpanan:</strong> 256 GB</li>
+            <li>
+              <strong>Kamera Utama:</strong> 200.0 MP + 10.0 MP + 12.0 MP + 10.0
+              MP
+            </li>
+            <li><strong>Kamera Depan:</strong> 12.0 MP</li>
+            <li>
+              <strong>Video Recording Resolution:</strong> UHD 8K (7680 x 4320)
+              @30fps
+            </li>
+            <li><strong>Baterai:</strong> 5000 mAh</li>
+          </ul>
+        </div>
+        <div id="spec-popup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closeSpecPopup()">&times;</span>
+            <h3>Spesifikasi</h3>
+            <p>Konten spesifikasi di sini.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimonial-list">
+          <div
+            class="testimonial-item"
+            onclick="openTestimonialPopup('Budi', 'budi.jpg', 'Pengalaman saya menyewa Samsung S23 Ultra sangat memuaskan! Kondisi handphone seperti baru dan proses penyewaan sangat cepat.')"
+          >
+            <img src="budi.jpg" alt="Budi" />
+            <p>
+              "Pengalaman saya menyewa Samsung S23 Ultra sangat memuaskan!
+              Kondisi handphone seperti baru dan proses penyewaan sangat cepat."
+            </p>
+            <h4>- Budi, Jakarta</h4>
+          </div>
+          <div
+            class="testimonial-item"
+            onclick="openTestimonialPopup('Siti', 'siti.jpg', 'Layanan pelanggan yang sangat baik. Handphone dalam kondisi prima, cocok untuk event saya yang berlangsung seharian.')"
+          >
+            <img src="siti.jpg" alt="Siti" />
+            <p>
+              "Layanan pelanggan yang sangat baik. Handphone dalam kondisi
+              prima, cocok untuk event saya yang berlangsung seharian."
+            </p>
+            <h4>- Siti, Bandung</h4>
+          </div>
+          <div
+            class="testimonial-item"
+            onclick="openTestimonialPopup('Andi', 'andi.jpg', 'Saya menyewa untuk perjalanan bisnis. Handphonenya sangat berkualitas dan proses pengembalian sangat mudah.')"
+          >
+            <img src="andi.jpg" alt="Andi" />
+            <p>
+              "Saya menyewa untuk perjalanan bisnis. Handphonenya sangat
+              berkualitas dan proses pengembalian sangat mudah."
+            </p>
+            <h4>- Andi, Surabaya</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup Testimoni -->
+      <div id="testimonial-popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closeTestimonialPopup()">&times;</span>
+          <img id="popup-image" src="" alt="Testimonial Image" />
+          <h3 id="popup-name"></h3>
+          <p id="popup-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>Tentang Kami</h2>
+        <p>
+          Kami adalah penyedia jasa sewa handphone dengan pengalaman
+          bertahun-tahun. Dengan komitmen terhadap kualitas dan layanan
+          pelanggan, kami selalu memastikan Anda mendapatkan yang terbaik.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Kontak Kami</h2>
+        <form action="#" method="post">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Tombol WhatsApp -->
+    <a
+      href="https://wa.me/6281291338582"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      Chat kami di WhatsApp
+    </a>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Rental Handphone. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
